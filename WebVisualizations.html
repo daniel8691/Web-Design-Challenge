@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Visualization</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css"> 
+        
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#temperature-visualization">Max Temperature</a>
+                      <a class="dropdown-item" href="#humidity-visualization">Humidity</a>
+                      <a class="dropdown-item" href="#cloudiness-visualization">Cloudiness</a>
+                      <a class="dropdown-item" href="#windspeed-visualization">Wind Speed</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#comparison-page">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#data">Data</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        
+       
+        <br>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-sm-11">
+
+              <div class="card">
+
+                  <div class="card-body">
+                    <h1 class="page-headings">Summary: Latitude vs X</h1>
+                    <img id= "summary-page-img" src="assets/images/Temperature.png" alt="Lat vs Temp" height="300" width="370" style="float:left">
+                    <br>
+                    <p>The Purpose of this project was to analyze how weather changes as you get 
+                        closer to the equator. To accomplish this analysis, we first pulled data 
+                        from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                    <br>
+                    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather
+                        vs latitude. Factors we looked at included temperature, cloudiness, wind speed, and humidity.
+                        This site provides the source data and visualizations created as part of the analysis, as well 
+                        as explanations and descriptions of any trends and correlations witnessed. 
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-11">
+                <section class="layout-multicolumn">    
+                    <div class="card">
+                            <section class="card-body">
+                                <h3 class="card-title page-headings">Visualizations</h3>
+                                <br>
+                                <div class="row">
+                                    <section class="col-md-6 col-sm-3">                            
+                                        <a href="assets/images/Humidity.png" target="_blank">                      
+                                        <img src="assets/images/Humidity.png" class="rounded float-left" alt="Latitude vs Humidity"> 
+                                        </a> 
+                                    
+                                    </section> 
+                                    <section class="col-md-6 col-sm-3">
+                                        <a href="assets/images/Cloudiness.png" target="_blank">                    
+                                        <img src="assets/images/Cloudiness.png" class="rounded float-right" alt="Latitude vs Cloudiness" >
+                                        </a>                                    
+                                    </section> 
+                                </div>
+                                <div class="row">
+                                    <section class="col-md-6 col-sm-3">
+                                        <a href="assets/images/Wind Speed.png" target="_blank">                      
+                                        <img src="assets/images/Wind Speed.png" class="round float-left" alt="Lat vs Wind Speed">
+                                        </a> 
+                                    </section> 
+                                    <section class="col-md-6 col-sm-3">
+                                        <a href="assets/images/Temperature.png" target="_blank">                     
+                                        <img src="assets/images/Temperature.png" class="round float-right" alt="Lat vs Temp">
+                                        </a> 
+                                    </section> 
+                                </div>                              
+                               
+                            </section>
+                        </div>
+                    </section>
+                </div>
+                    
+            </div>
+      
+          
+              </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          
+
+
+<section class="layout-multicolumn container section" id="comparison-page">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="page-headings">Comparison: Latitude vs X</h1>
+            <hr>
+            <p>Click any plot to get an in-depth analysis</p>
+        </div>
+        <div class="row justify-content-center">
+            <section class="col-11 col-md-6 col-lg-6">
+                <h3 style="text-align:center; color:lightseagreen">vs. Humidity</h3>              
+                <a href="assets/images/Humidity.png" target="_blank">                      
+                <img src="assets/images/Humidity.png" alt="Latitude vs Humidity"> 
+                </a> 
+            </section>
+            <section class="col-11 col-md-6 col-lg-6"> 
+                <h3 style="text-align:center; color:lightseagreen">vs. Cloudiness</h3>   
+                <a href="assets/images/Cloudiness.png" target="_blank">                    
+                <img src="assets/images/Cloudiness.png" alt="Latitude vs Cloudiness">
+                </a>
+            </section>
+            <section class="col-11 col-md-6 col-lg-6"> 
+                <h3 style="text-align:center; color:lightseagreen">vs. Wind Speed</h3>   
+                <a href="assets/images/Wind Speed.png" target="_blank">                      
+                <img src="assets/images/Wind Speed.png" alt="Lat vs Wind Speed">
+                </a> 
+            </section>
+            <section class="col-11 col-md-6 col-lg-6">
+                <h3 style="text-align:center; color:lightseagreen">vs. Temperature</h3>   
+                <a href="assets/images/Temperature.png" target="_blank">                     
+                <img src="assets/images/Temperature.png" alt="Lat vs Temp">
+                </a> 
+            </section>
+        </div>
+    </div>
+
+  
+        <br>
+        <br>
+        <br>
+
+        <section class="container section" id="data">
+            <div class="card py-3">
+                <div class="card-body">
+                    <h1 class="page-headings">Data</h1>
+                    <br>
+                    <hr>
+                    <p>The following table includes all of the data used for plotting during this project</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12" >
+                        <a href="assets/images/DataFrame.jpg" target="_blank">
+                            <img class="dataframe-image" src="assets/images/DataFrame.jpg" alt="Dataframe">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <section class="section" id="humidity-visualization">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-sm-11">
+    
+                  <div class="card">
+      
+                      <div class="card-body">
+                        <h1 class="page-headings">Humidity</h1>
+                        <hr>
+                        <img id= "summary-page-img" src="assets/images/Humidity.png" alt="Lat vs Humidity" height="300" width="370" style="float:left">
+                        <br>
+                        <p>The Purpose of this project was to analyze how weather changes as you get 
+                            closer to the equator. To accomplish this analysis, we first pulled data 
+                            from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                        <br>
+                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather
+                            vs latitude. Factors we looked at included temperature, cloudiness, wind speed, and humidity.
+                            This site provides the source data and visualizations created as part of the analysis, as well 
+                            as explanations and descriptions of any trends and correlations witnessed. 
+                        </p>
+    
+                      </div>
+                    </div>
+                  </div>
+    
+                <div class="col-md-4 col-sm-11">
+                    <section class="layout-multicolumn">    
+                        <div class="card">
+                                <section class="card-body">
+                                    <h3 class="card-title page-headings">Visualizations</h3>
+                                    <br>
+                                    <div class="row">
+                                        <section class="col-md-6 col-sm-3">                            
+                                            <a href="assets/images/Humidity.png" target="_blank">                      
+                                            <img src="assets/images/Humidity.png" class="rounded float-left" alt="Latitude vs Humidity"> 
+                                            </a> 
+                                        
+                                        </section> 
+                                        <section class="col-md-6 col-sm-3">
+                                            <a href="assets/images/Cloudiness.png" target="_blank">                    
+                                            <img src="assets/images/Cloudiness.png" class="rounded float-right" alt="Latitude vs Cloudiness" height="125" width="145">
+                                            </a>                                    
+                                        </section> 
+                                    </div>
+                                    <div class="row">
+                                        <section class="col-md-6 col-sm-3">
+                                            <a href="assets/images/Wind Speed.png" target="_blank">                      
+                                            <img src="assets/images/Wind Speed.png" class="round float-left" alt="Lat vs Wind Speed height="125" width="145">
+                                            </a> 
+                                        </section> 
+                                        <section class="col-md-6 col-sm-3">
+                                            <a href="assets/images/Temperature.png" target="_blank">                     
+                                            <img src="assets/images/Temperature.png" class="round float-right" alt="Lat vs Temp" height="125" width="145">
+                                            </a> 
+                                        </section> 
+                                    </div>                              
+                                   
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+        </section>
+        
+            <br>
+            <br>
+            <br>
+            <section class="section" id="cloudiness-visualization">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 col-sm-11">
+        
+                      <div class="card">
+          
+                          <div class="card-body">
+                            <h1 class="page-headings">Cloudiness</h1>
+                            <hr>
+                            <img id= "summary-page-img" src="assets/images/Cloudiness.png" alt="Lat vs Cloudiness" height="300" width="370" style="float:left">
+                            <br>
+                            <p>The Purpose of this project was to analyze how weather changes as you get 
+                                closer to the equator. To accomplish this analysis, we first pulled data 
+                                from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                            <br>
+                            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather
+                                vs latitude. Factors we looked at included temperature, cloudiness, wind speed, and humidity.
+                                This site provides the source data and visualizations created as part of the analysis, as well 
+                                as explanations and descriptions of any trends and correlations witnessed. 
+                            </p>
+        
+                          </div>
+                        </div>
+                      </div>
+      
+                    <div class="col-md-4 col-sm-11">
+                        <section class="layout-multicolumn">    
+                            <div class="card">
+                                    <section class="card-body">
+                                        <h3 class="card-title page-headings">Visualizations</h3>
+                                        <br>
+                                        <div class="row">
+                                            <section class="col-md-6 col-sm-3">                            
+                                                <a href="assets/images/Humidity.png" target="_blank">                      
+                                                <img src="assets/images/Humidity.png" class="rounded float-left" alt="Latitude vs Humidity"> 
+                                                </a> 
+                                            
+                                            </section> 
+                                            <section class="col-md-6 col-sm-3">
+                                                <a href="assets/images/Cloudiness.png" target="_blank">                    
+                                                <img src="assets/images/Cloudiness.png" class="rounded float-right" alt="Latitude vs Cloudiness" height="125" width="145">
+                                                </a>                                    
+                                            </section> 
+                                        </div>
+                                        <div class="row">
+                                            <section class="col-md-6 col-sm-3">
+                                                <a href="assets/images/Wind Speed.png" target="_blank">                      
+                                                <img src="assets/images/Wind Speed.png" class="round float-left" alt="Lat vs Wind Speed height="125" width="145">
+                                                </a> 
+                                            </section> 
+                                            <section class="col-md-6 col-sm-3">
+                                                <a href="assets/images/Temperature.png" target="_blank">                     
+                                                <img src="assets/images/Temperature.png" class="round float-right" alt="Lat vs Temp" height="125" width="145">
+                                                </a> 
+                                            </section> 
+                                        </div>                              
+                                       
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+            </section>
+            
+            <br>
+            <br>
+            <br>
+            <section class="section" id="windspeed-visualization">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 col-sm-11">
+        
+                      <div class="card">
+          
+                          <div class="card-body">
+                            <h1 class="page-headings">Wind Speed</h1>
+                            <hr>
+                            <img id= "summary-page-img" src="assets/images/Wind Speed.png" alt="Lat vs Wind Speed" height="300" width="370" style="float:left">
+                            <br>
+                            <p>The Purpose of this project was to analyze how weather changes as you get 
+                                closer to the equator. To accomplish this analysis, we first pulled data 
+                                from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                            <br>
+                            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather
+                                vs latitude. Factors we looked at included temperature, cloudiness, wind speed, and humidity.
+                                This site provides the source data and visualizations created as part of the analysis, as well 
+                                as explanations and descriptions of any trends and correlations witnessed. 
+                            </p>
+        
+                          </div>
+                        </div>
+                      </div>
+      
+                    <div class="col-md-4 col-sm-11">
+                        <section class="layout-multicolumn">    
+                            <div class="card">
+                                    <section class="card-body">
+                                        <h3 class="card-title page-headings">Visualizations</h3>
+                                        <br>
+                                        <div class="row">
+                                            <section class="col-md-6 col-sm-3">                            
+                                                <a href="assets/images/Humidity.png" target="_blank">                      
+                                                <img src="assets/images/Humidity.png" class="rounded float-left" alt="Latitude vs Humidity"> 
+                                                </a> 
+                                            
+                                            </section> 
+                                            <section class="col-md-6 col-sm-3">
+                                                <a href="assets/images/Cloudiness.png" target="_blank">                    
+                                                <img src="assets/images/Cloudiness.png" class="rounded float-right" alt="Latitude vs Cloudiness" height="125" width="145">
+                                                </a>                                    
+                                            </section> 
+                                        </div>
+                                        <div class="row">
+                                            <section class="col-md-6 col-sm-3">
+                                                <a href="assets/images/Wind Speed.png" target="_blank">                      
+                                                <img src="assets/images/Wind Speed.png" class="round float-left" alt="Lat vs Wind Speed height="125" width="145">
+                                                </a> 
+                                            </section> 
+                                            <section class="col-md-6 col-sm-3">
+                                                <a href="assets/images/Temperature.png" target="_blank">                     
+                                                <img src="assets/images/Temperature.png" class="round float-right" alt="Lat vs Temp" height="125" width="145">
+                                                </a> 
+                                            </section> 
+                                        </div>                              
+                                       
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+            </section>
+            
+            <br>
+            <br>
+            <br>
+            <section class="section" id="temperature-visualization">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 col-sm-11">
+        
+                      <div class="card">
+          
+                          <div class="card-body">
+                            <h1 class="page-headings">Temperature</h1>
+                            <hr>
+                            <img id= "summary-page-img" src="assets/images/Temperature.png" alt="Lat vs Max Temperature" height="300" width="370" style="float:left">
+                            <br>
+                            <p>The Purpose of this project was to analyze how weather changes as you get 
+                                closer to the equator. To accomplish this analysis, we first pulled data 
+                                from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                            <br>
+                            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather
+                                vs latitude. Factors we looked at included temperature, cloudiness, wind speed, and humidity.
+                                This site provides the source data and visualizations created as part of the analysis, as well 
+                                as explanations and descriptions of any trends and correlations witnessed. 
+                            </p>
+        
+                          </div>
+                        </div>
+                      </div>
+      
+                    <div class="col-md-4 col-sm-11">
+                        <section class="layout-multicolumn">    
+                            <div class="card">
+                                    <section class="card-body">
+                                        <h3 class="card-title page-headings">Visualizations</h3>
+                                        <br>
+                                        <div class="row">
+                                            <section class="col-md-6 col-sm-3">                            
+                                                <a href="assets/images/Humidity.png" target="_blank">                      
+                                                <img src="assets/images/Humidity.png" class="rounded float-left" alt="Latitude vs Humidity"> 
+                                                </a> 
+                                            
+                                            </section> 
+                                            <section class="col-md-6 col-sm-3">
+                                                <a href="assets/images/Cloudiness.png" target="_blank">                    
+                                                <img src="assets/images/Cloudiness.png" class="rounded float-right" alt="Latitude vs Cloudiness" height="125" width="145">
+                                                </a>                                    
+                                            </section> 
+                                        </div>
+                                        <div class="row">
+                                            <section class="col-md-6 col-sm-3">
+                                                <a href="assets/images/Wind Speed.png" target="_blank">                      
+                                                <img src="assets/images/Wind Speed.png" class="round float-left" alt="Lat vs Wind Speed height="125" width="145">
+                                                </a> 
+                                            </section> 
+                                            <section class="col-md-6 col-sm-3">
+                                                <a href="assets/images/Temperature.png" target="_blank">                     
+                                                <img src="assets/images/Temperature.png" class="round float-right" alt="Lat vs Temp" height="125" width="145">
+                                                </a> 
+                                            </section> 
+                                        </div>                              
+                                       
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+            </section>
+
+                    
+
+
+        </section>        
+    </body>
+</html>
+
+
+
+
