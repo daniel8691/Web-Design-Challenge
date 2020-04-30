@@ -41,7 +41,16 @@ body {
     padding-top:60px;
 }
 
-            
+@media (max-width: 768px) {
+    #site-title {
+        color:white;
+    }
+    .navbar-toggler {
+        background:lightseagreen;
+    }
+}
+
+       
 /*      
 
   .col-1 {width: 8.33%;}
